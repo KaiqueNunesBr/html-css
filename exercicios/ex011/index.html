@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente  e diminua o tamanho do seu navegafor</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a Reproduzir audios em HTML5</p>
+    <audio src="midia/castle of glass.mp3"controls>Castle of glass</audio>
+    <hr>
+    <!--    Outra forma de reprodução-->
+    <audio preload="metadata" controls loop> 
+        <!--MP3 WAV OGG-->
+        <source src="midia/Cattle-telecasted.mp3" type="audio/mpeg">
+        <source src="midia/Cattle-telecasted.ogg" type="audio/ogg">
+        <source src="midia/Cattle-telecasted.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador nao consegue reproduzir audio!
+            <a href="midia/Cattle-telecasted.mp3">Baixar Cattle Telecasted</a>
+        </p>
+    </audio>
+</body>
+</html>
