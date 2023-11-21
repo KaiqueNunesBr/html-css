@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        iframe#tela {
+            width: 65vw;
+            height: 450px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro quo sed quisquam placeat dolores molestiae, itaque modi asperiores magnam nostrum. Eos, earum nemo deleniti natus totam commodi tempora ipsa!</p>
+
+    <ul>
+        <li><a href="pag-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate pariatur qui labore explicabo officiis delectus eius id dolore. Suscipit mollitia harum perspiciatis ipsam, nihil aliquid odio rem voluptatem at officia!</p>
+
+    <iframe id="tela" name="frame" src="pag-extras/pagina000.html">
+        <p>
+            Seu navegador não suporta iframes!
+        </p>
+    </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error repudiandae suscipit, ad beatae aliquam dolore libero ex laudantium molestiae nulla magnam cumque. At nesciunt, consectetur obcaecati corporis dolores expedita aspernatur.
+    Lorem ipsum dolor sit amet consecteturadipisicing elit. Porro nisi dicta veniamest, aliquid itaque perspiciatis dolorvoluptas. Non officiis ducimus facere nequequasi nisi dignissimos sit atque? Dolor, id?
+    </p>
+</body>
+</html>
