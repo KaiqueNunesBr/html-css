@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio button em formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo: </legend>
+            <input type="radio" id="imasculino" name="genero" value="Masculino" checked>
+            <label for="imasculino"> Masculino </label><br>
+            <input type="radio" id="ifeminino" name="genero" value="Feminino">
+            <label for="ifeminino"> Feminino </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos: </legend>
+            <input type="checkbox" id="ibasquete" name="basquete" value="basquete">
+            <label for="ibasquete"> Basquete </label><br>
+            <input type="checkbox" id="ifutebol" name="futebol" value="Futebol">
+            <label for="ifutebol"> Futebol </label><br>
+            <input type="checkbox" id="inatação" name="natação" value="natação">
+            <label for="inatação"> Natação </label><br>
+            <input type="checkbox" id="ipingue-pong" name="pingue-pong" value="Pingue-pong">
+            <label for="ipingue-pong"> Pingue-pong </label><br>
+            <input type="checkbox" id="ioutros" name="outros" value="Outros">
+            <label for="ioutros"> Outros </label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
