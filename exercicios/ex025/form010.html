@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios em html</title>
+</head>
+<body>
+    <h1>formularios HTML</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" id="iano" name="aniverso" min="1900" max="20
+            23" 
+            oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="iidade">Sua idade é: </label>
+            <output name="idade" id="iidade"> </output><br><br>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        function calcIdade(){
+            var dataAtual = new Date().getFullYear();
+            iidade.innerHTML = Number(dataAtual) - Number(iano.value);
+        }
+    </script>
+</body>
+</html>
