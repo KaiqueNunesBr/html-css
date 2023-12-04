@@ -28,14 +28,14 @@ header > h1 {
 }
 
 span#burguer {
-    background-color: var(--cor-5);
+    background-color: var(--cor-1);
     color: white;
     display: block;
     text-align: center;
     padding: 10px;
 }
 span#burguer:hover {
-    background-color: white;
+    background-color: var(--cor-4);
     color: black;
     cursor: pointer;
 }
@@ -46,6 +46,7 @@ menu {
 
 menu > ul {
     list-style-type: none;
+    background-color: var(--cor-1);
 }
 
 menu > ul > li > a {
@@ -53,9 +54,7 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: var(--cor-1);
     color: white;
-    border-top: 2px solid var(--cor-5);
     transition: all .3s ease-in-out;
 
 }
